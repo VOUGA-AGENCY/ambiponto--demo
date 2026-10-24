@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "contacts": [
+    {
+      "id": "c1",
+      "name": "António Rodrigues",
+      "company": null,
+      "location": "Santarém",
+      "type": "Particular",
+      "email": "antónio.rodrigues@example.com",
+      "phone": "+351 910 000 100"
+    },
+    {
+      "id": "c2",
+      "name": "Pedro Santos",
+      "company": "Auto Santos & Filhos",
+      "location": "Torres Novas",
+      "type": "Oficina",
+      "email": "pedro.santos@example.com",
+      "phone": "+351 910 000 101"
+    },
+    {
+      "id": "c3",
+      "name": "Miguel Oliveira",
+      "company": null,
+      "location": "Porto",
+      "type": "Particular",
+      "email": "miguel.oliveira@example.com",
+      "phone": "+351 910 000 102"
+    }
+  ],
+  "requests": [
+    {
+      "id": "AMB-1048",
+      "contactId": "c1",
+      "subject": "Entrega de Opel Corsa de 2006 para abate",
+      "category": "Abate",
+      "channel": "E-mail",
+      "status": "Novo",
+      "priority": "Normal",
+      "assignee": "Por atribuir",
+      "createdAt": "2026-10-22T09:42:00+01:00",
+      "dueAt": "2026-10-22T16:00:00+01:00",
+      "nextAction": "Confirmar documentação e combinar a entrega."
+    },
+    {
+      "id": "AMB-1047",
+      "contactId": "c2",
+      "subject": "Farol esquerdo · Renault Clio IV",
+      "category": "Peças",
+      "channel": "WhatsApp",
+      "status": "Novo",
+      "priority": "Alta",
+      "assignee": "Ricardo Silva",
+      "createdAt": "2026-10-22T09:18:00+01:00",
+      "dueAt": "2026-10-22T12:00:00+01:00",
+      "nextAction": "Confirmar a referência do farol com a oficina."
+    },
+    {
+      "id": "AMB-1046",
+      "contactId": "c3",
+      "subject": "Acompanhamento de caixa de velocidades",
+      "category": "Expedições",
+      "channel": "Telefone",
+      "status": "Em curso",
+      "priority": "Alta",
+      "assignee": "João Ferreira",
+      "createdAt": "2026-10-22T08:55:00+01:00",
+      "dueAt": "2026-10-22T15:00:00+01:00",
+      "nextAction": "Confirmar a localização da encomenda EXP-2026-0831."
+    }
+  ],
+  "interactions": [
+    {
+      "id": "i0-1",
+      "requestId": "AMB-1048",
+      "contactId": "c1",
+      "channel": "E-mail",
+      "kind": "incoming",
+      "body": "Bom dia,\n\nTenho um Opel Corsa de 2006, em meu nome, que pretendo entregar para abate. Sou de Santarém e posso levar o carro às vossas instalações.\n\nQue documentos preciso de levar? E como funciona a emissão do certificado de destruição?\n\nObrigado,\nAntónio Rodrigues",
+      "at": "2026-10-22T09:42:00+01:00",
+      "author": "António Rodrigues"
+    },
+    {
+      "id": "i1-1",
+      "requestId": "AMB-1047",
+      "contactId": "c2",
+      "channel": "WhatsApp",
+      "kind": "incoming",
+      "body": "Bom dia! Estamos à procura de um farol esquerdo para um Renault Clio IV de 2015. Envio a fotografia do farol. Conseguem confirmar a referência? Obrigado!\nPedro · Auto Santos & Filhos",
+      "at": "2026-10-22T09:18:00+01:00",
+      "author": "Pedro Santos",
+      "attachment": "/farol-clio.jpg"
+    },
+    {
+      "id": "i2-1",
+      "requestId": "AMB-1046",
+      "contactId": "c3",
+      "channel": "Telefone",
+      "kind": "call",
+      "body": "Cliente do Porto pretende saber o estado da caixa de velocidades enviada em 19/10, há três dias. Referência de expedição EXP-2026-0831. Ficou combinado confirmar a situação com a transportadora e devolver a chamada.",
+      "at": "2026-10-22T08:55:00+01:00",
+      "author": "Miguel Oliveira",
+      "duration": 204,
+      "operator": "João Ferreira",
+      "callStatus": "Atendida"
+    },
+    {
+      "id": "i2-note",
+      "requestId": "AMB-1046",
+      "contactId": "c3",
+      "channel": "Telefone",
+      "kind": "note",
+      "body": "Expedição registada a 19/10. Confirmar o ponto de situação antes de devolver a chamada ao Miguel.",
+      "at": "2026-10-22T09:02:00+01:00",
+      "author": "João Ferreira"
+    }
+  ]
+}
